@@ -1,4 +1,31 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #0898e6;
+    padding: 15px;
+}
+
 .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.website-name {
+    font-family: 'Lobster', cursive;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -9,89 +36,52 @@
     color: black;
 }
 
-.navbar-nav .nav-item:hover {
-    display: block;
-    color: black;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item:hover .nav-link {
     color: red;
     font-weight: 700;
 }
 
-.btn {
-    font-weight: 600;
-}
-
-#tani {
-    color: green;
-}
-
-#tanu {
-    color: blue;
-}
-
-#tani:hover {
-    color: white;
-}
-
-#tanu:hover {
-    color: white;
-}
-
-.stylish-text {
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 20px;
-}
-
 @media (max-width: 992px) {
-    .stylish-text {
-        font-size: 24px;
+    .website-name {
+        font-size: 1.25rem;
     }
 
     .nav-link {
         font-size: 1rem;
     }
-
-    .navbar-brand {
-        font-size: 1.25rem;
-    }
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
 
 .image-container {
-    background-image: url('h\ 1.jpg'); /* Ensure this image path is correct */
+    background-image: url('h\ 1.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 230px; /* Adjust the vertical position of the text */
+    width: 100%;
+    color:  #0898e6;
+    font-size: 5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    z-index: 1;
+
 }
 
 .search-bar {
     background: #fff;
     width: 60%;
-    margin: -50px auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
+    margin-top: 60px;
+    z-index: 1;
 }
 
 .search-bar form {
@@ -118,23 +108,26 @@ body, html {
     cursor: pointer;
 }
 
-.location-input {
-    flex: 12;
-}
-
 .search-bar form label {
     font-weight: 600;
 }
+
 .card {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    
+}
+.card:hover{
+    border: 2px solid rgba(76, 76, 76, 0.2);
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
 }
 
 .card-img-top {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .card-body {
@@ -200,3 +193,57 @@ body, html {
         padding: 8px;
     }
 }
+.div1{
+   margin: 100px;
+   margin-top: 80px;
+    border: 2px solid rgba(76, 76, 76, 0.2);
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
+}
+
+.footer {
+    border: 2px solid rgba(76, 76, 76, 0.2);
+    padding: 40px 0;
+    color:black;
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.165);
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:black;
+}
+
+.footer p, .footer a {
+    font-size: 0.9rem;
+    color:black;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px; 
+    color: black;
+}
+
+.footer .social-icons a:hover {
+    color: black;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+    color:black;
+}
+
+.footer .container {
+    max-width: 1100px;
+    color:black;
+}
+.popular-category{
+    background-color: rgba(128, 128, 128, 0.479);
+}  
