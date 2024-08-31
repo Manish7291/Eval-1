@@ -8,14 +8,17 @@ body, html {
 }
 
 .navbar {
-    background-color: #0898e6;
+    background-color: rgb(61, 125, 222);
     padding: 15px;
+    color:white;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-    color: black;
+        
+    color:white;
+
 }
 
 .logo {
@@ -28,16 +31,17 @@ body, html {
     font-family: 'Lobster', cursive;
     font-size: 1.5rem;
     font-weight: bold;
+    color:white;
 }
 
 .nav-link {
     font-size: 1.2rem;
     font-weight: 700;
-    color: black;
+    color:white;
 }
 
 .navbar-nav .nav-item:hover .nav-link {
-    color: red;
+    color: white;
     font-weight: 700;
 }
 
@@ -51,7 +55,6 @@ body, html {
     }
 }
 
-
 .image-container {
     background-image: url('h\ 1.jpg'); /* Replace with your image URL */
     background-size: cover;
@@ -63,54 +66,49 @@ body, html {
     position: relative;
     text-align: center;
 }
+.search-bar {
+   width:85.5%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    margin-top: -60px;
 
+}
+.search-bar input,
+.search-bar select {
+    border: none;
+    box-shadow: none;
+    border: solid rgb(131, 129, 129);
+    margin: 0;
+}
+.search-bar input::placeholder {
+    color: #666;
+  
+   
+}
+.search-bar .btn {
+   
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 8px 20px;
+}
+.icon {
+    color: #666;
+    padding-right: 8px;
+}
 .overlay-text {
     position: absolute;
     top: 230px; /* Adjust the vertical position of the text */
     width: 100%;
-    color:  #0898e6;
+    color: white;
     font-size: 5rem; /* Adjust the font size as needed */
     font-weight: bold;
     z-index: 1;
 
 }
 
-.search-bar {
-    background: #fff;
-    width: 60%;
-    padding: 6px 10px 6px 30px;
-    border-radius: 50px;
-    margin-top: 60px;
-    z-index: 1;
-}
-
-.search-bar form {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.search-bar form input {
-    display: block;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-
-.search-bar form button {
-    background: #0898e6;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-.search-bar form label {
-    font-weight: 600;
-}
 
 .card {
     border: 1px solid #ddd;

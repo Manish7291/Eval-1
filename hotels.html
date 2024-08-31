@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="logo.png" alt="Logo" class="logo">
+                
                 <span class="website-name">Easy Trip</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,30 +39,51 @@
         </div>
     </nav>
     <div class="image-container">
-        <div class="overlay-text">
-            <h1 style="font-size: 50px;"><b>Book  Unforgettable Stays Now!</b></h1>
-        </div>
+      
+    <div class="container mt-5">
         <div class="search-bar">
-            <form>
-                <div>
-                    <input type="text" placeholder="SEARCH HOTELS.......">
-                </div>
-                <div>
-                    <label>Check in</label>
-                    <input type="text" placeholder="Add date">
-                </div>
-                <div>
-                    <label>Check out</label>
-                    <input type="text" placeholder="Add date">
-                </div>
-                <div>
-                    <label>Add guest</label>
-                    <input type="text" placeholder="Add guest">
-                </div>
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <!-- Destination Input -->
+            <div class="d-flex align-items-center flex-grow-1 p-2">
+                
+                <input type="text" class="form-control" placeholder="Where are you going?">
+            </div>
+            <!-- Date Picker -->
+            <div class="d-flex align-items-center flex-grow-1 p-2">
+                <i class="icon bi bi-calendar"></i>
+                <input type="text" class="form-control datepicker" placeholder="Check-in date  —  Check-out date">
+            </div>
+            <!-- Guest Dropdown -->
+            <div class="dropdown d-flex align-items-center flex-grow-1 p-2">
+                <i class="icon bi bi-people"></i>
+                <button class="btn dropdown-toggle" type="button" id="guestDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    2 adults · 0 children · 1 room
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="guestDropdown">
+                    <li>
+                        <div class="px-4 py-2">
+                            <label>Adults</label>
+                            <input type="number" class="form-control" value="2" min="1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="px-4 py-2">
+                            <label>Children</label>
+                            <input type="number" class="form-control" value="0" min="0">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="px-4 py-2">
+                            <label>Rooms</label>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Search Button -->
+            <button class="btn"style="  background-color: rgb(61, 125, 222);color:white;">Search</button>
         </div>
     </div>
+</div>
 
 
 
