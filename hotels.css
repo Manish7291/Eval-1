@@ -26,8 +26,7 @@ header {
     justify-content: space-between;
     padding: 30px 10%;
     transition: ease 0.40s;
-    backdrop-filter: blur(2px); /* Apply a blur effect */
-    /* Semi-transparent background */
+    backdrop-filter: blur(2px); 
 }
 
 
@@ -69,17 +68,17 @@ section{
 }
 
 .image-container {
-    background-image: url('h 1.jpg'); /* Ensure this URL is correct */
+    background-image: url('h 1.jpg');
     background-size: cover;
     background-position: center;
     height: 820px;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
-    margin-top: 0; /* Ensure no margin is pushing it down */
-    padding-top: 0; /* Ensure no padding is pushing it down */
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .search-bar {
@@ -117,10 +116,10 @@ section{
 }
 .overlay-text {
     position: absolute;
-    top: 210px; /* Adjust the vertical position of the text */
+    top: 210px;
     width: 100%;
     color: white;
-    font-size: 5rem; /* Adjust the font size as needed */
+    font-size: 5rem; 
     font-weight: bold;
     z-index: 1;
 
@@ -216,7 +215,7 @@ section{
     box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
 }
 #contact{
-    background:  #398bd2 ;
+    background:  #71a8d8 ;
 }
 
 .main{
