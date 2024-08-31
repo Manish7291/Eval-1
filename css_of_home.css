@@ -169,11 +169,13 @@ header .sticky{
 
 .row-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(170px,auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
     margin-top: 5rem;
+    margin-left: -25px;
+    margin-right: -25px;
     
 }
 .container-box{
@@ -184,6 +186,7 @@ header .sticky{
     margin: 5px;
     transition: all 1s ease 0s;
     cursor: pointer;
+   
 }
 .container-img img{
     height: 85px;
@@ -368,4 +371,102 @@ border-radius: 20px;}
     top: 6px;
     cursor: pointer;
     right: 10px;
+}
+
+#contact{
+    background:  #086bc1 ;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    padding: 20px 0;
+}
+
+.list{
+    width: 25%;
+    padding: 0 20px;
+}
+
+.list h4{
+    font-size: 21px;
+    color: var(--bg-color);
+    margin-bottom: 40px;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    
+
+}
+
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: var(--bg-color);
+}
+.list ul li::not(last-child){
+    margin-bottom: 16px;
+    
+}
+
+.list ul li a{
+    color: #fffffb;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover{
+    color: var(--bg-color);
+    transform: translateX(14px);
+}
+
+.list .social a{
+    height: 40px;
+    width: 40px;
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .3s;
+    
+}
+
+.end-text{
+    margin-bottom: -50px;
+    text-align: center;
+    
+}
+
+.end-text p{
+    color: var(--bg-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1400px){
+    header{
+        padding: 17px 3%;
+        transition: .2s;
+    }
+
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+
+    section{
+        padding: 80px;
+    }
 }
