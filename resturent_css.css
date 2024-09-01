@@ -7,6 +7,27 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 18%;
+    transition: ease .40s;
+
+}
+header.sticky {
+    /* background-image: url(nab\ bg\ 1.png) ;
+     background-repeat: no-repeat;
+    background-size: cover; /* Change this line */
+    /* background-position: center;  */
+    background-color:  #086bc1;
+  }
 header{
     position: fixed;
     top: 0;
@@ -21,6 +42,26 @@ header{
     background-color: #086bc1;
 
 }
+
+#menu-icon{
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+header .sticky{
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+}
+
+section{
+    padding: 80px 18%;
+
+}
+
 .logo{
     font-size: 35px;
     font-weight: 600;
@@ -447,6 +488,24 @@ h1 {
     font-size: 15px;
     letter-spacing: 2px;
 }
+@media (max-width: 1400px){
+    header{
+        padding: 17px 3%;
+        transition: .2s;
+    }
+
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+
+    section{
+        padding: 80px;
+    }
+}
+
+
+
 
 @media (max-width: 1400px){
     header{
@@ -464,4 +523,66 @@ h1 {
     }
 }
   
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .famous2 {
+        padding: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 24px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        font-size: 14px;
+    }
+
+    .register-btn {
+        padding: 8px 16px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar div {
+        margin: 5px 0;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}
+
  

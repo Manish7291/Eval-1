@@ -476,3 +476,59 @@ border-radius: 20px;}
         padding: 80px;
     }
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .register-btn {
+        margin-right: 0;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .footer .list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    .home-btn {
+        padding: 10px 20px;
+    }
+
+    .text h2 {
+        font-size: 1.8rem;
+    }
+}
