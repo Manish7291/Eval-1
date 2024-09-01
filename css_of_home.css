@@ -37,7 +37,11 @@ header{
 
 }
 header.sticky {
-    background-color:  #086bc1 ; /* Change to desired color */
+    /* background-image: url(nab\ bg\ 1.png) ;
+     background-repeat: no-repeat;
+    background-size: cover; /* Change this line */
+    /* background-position: center;  */
+    background-color:  #086bc1;
   }
 
 
