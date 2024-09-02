@@ -1,0 +1,349 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #0e3959 0%, #0e3959 30%, #136aad 30%, #136aad 100%);
+}
+
+.contactus {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+/* Title */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    color: white;
+    font-weight: 600;
+}
+.contact h3{
+    color:#0e3959;
+    font-weight: 600;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+
+}
+.contact p{
+    color:#021626;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Container Box */
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: form takes 2/3, map and info each take 1/3 */
+    grid-template-rows: auto; /* Adjust rows based on content */
+    grid-template-areas: 
+        "form map" /* Form and map side by side */
+        "form info"; /* Form spans 2/3, info takes 1/3 */
+    grid-gap: 20px;
+    background: rgba(255, 255, 255, 0.1); /* More transparent background */
+    backdrop-filter: blur(10px) brightness(1.2); /* Blur and slight brightness increase */
+    padding: 40px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border to enhance the crystal effect */
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    mix-blend-mode: overlay; /* Light overlay to enhance the crystal appearance */
+    pointer-events: none; /* Ensure it doesn't interfere with form interaction */
+}
+
+/* Contact Form */
+.form {
+    grid-area: form;
+}
+
+.formbox {
+    width: 100%;
+}
+
+.formbox.row50 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure inputs wrap in smaller screens */
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%; /* Full width for inputs */
+}
+
+.inputbox.row50 {
+    width: 48%; /* Half-width for side-by-side layout */
+}
+
+.formbox .row100 .inputbox {
+    width: 100%;
+}
+
+.inputbox span {
+    color: #021f2ee1;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.inputbox input,
+.inputbox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.inputbox textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+.inputbox input[type="submit"] {
+    background: #136aad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.inputbox input[type="submit"]:hover {
+    background: #0e3959;
+}
+
+
+.inputbox::placeholder {
+    color: gray;
+}
+
+/* Info Section */
+.info {
+    grid-area: info;
+    background: #0e3959;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.info h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info .infobox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info .infobox div span {
+    min-width: 40px;
+    height: 40px;
+    background-color: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.info .infobox div p,
+.info .infobox div a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+/* Map Section */
+.map {
+    grid-area: map;
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Footer Styling */
+footer {
+    background: #0e3959;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-content .sci {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-content .sci li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-content .sci li a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    background: #092237;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contactus {
+        padding: 40px 50px;
+    }
+
+    .box {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas: 
+            "form"
+            "map"
+            "info"; /* Stack form, map, and info sections */
+    }
+
+    .formbox.row50 {
+        flex-direction: column; /* Stack form fields vertically */
+    }
+
+    .inputbox.row50 {
+        width: 100%; /* Full width for inputs */
+    }
+}
+
+@media (max-width: 768px) {
+    .contactus {
+        padding: 40px 30px;
+    }
+
+    .box {
+        padding: 20px;
+        grid-gap: 30px;
+    }
+
+    .inputbox input,
+    .inputbox textarea {
+        font-size: 1em;
+    }
+
+    .info {
+        padding: 20px;
+    }
+
+    .inputbox input[type="submit"] {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus {
+        padding: 20px 15px;
+    }
+
+    .title h2 {
+        font-size: 1.5em;
+    }
+
+    .box {
+        padding: 15px;
+        grid-gap: 20px;
+    }
+
+    .inputbox input,
+    .inputbox textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .info,
+    .map {
+        padding: 15px;
+    }
+
+    .inputbox input[type="submit"] {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
