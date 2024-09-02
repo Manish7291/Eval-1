@@ -22,11 +22,16 @@ body{
 .btn a{
   color: #000000;
 }
+.logo{
+  margin-top: -50px;
+  
+}
+
 
 
 .container{
   /* border: 2px solid black; */
-  margin-top: 130px;
+  /* margin-top: 130px; */
   height: 500px;
   width: 900px;
 display: flex;
