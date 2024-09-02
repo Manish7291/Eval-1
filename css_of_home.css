@@ -42,7 +42,7 @@ header.sticky {
     background-size: cover; /* Change this line */
     /* background-position: center;  */
     /* background-image: url(nab\ bg\ 1.png); */
-    background-color:  transparent;
+    background-color:   #086bc1;
   }
 
 
@@ -64,7 +64,7 @@ header.sticky {
     transition:  ease .40s;
 }
 .navbar a:hover{
-    background: #086bc1;
+    background: #fff;
     
     color: black;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
