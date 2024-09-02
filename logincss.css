@@ -7,9 +7,17 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('login\ bg\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-attachment: fixed;
+}
 
-body{
-  background-image: url(loginbg2.jpg);
+
+/* body{
+  background-image: url(login\ bg\ 2.jpg);
   background-repeat: no-repeat;
     background-size: cover; /* Change this line */
     background-position: center; 
@@ -18,7 +26,7 @@ body{
      
     width: 100%;
     height: 600px;
-}
+} */
 .btn a{
   color: #000000;
 }
