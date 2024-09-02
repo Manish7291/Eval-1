@@ -7,7 +7,7 @@
   --text-light: #64748b;
   --extra-light: #f1f5f9;
   --white: #ffffff;
-  --max-width: 1200px;
+  --max-width: 100%;
 }
 
 * {
@@ -585,4 +585,158 @@ nav {
     gap: 1.5rem;
   }
 }
+
+
+
+
+
+
+
+/* 
+
+footer */
+#contact-section{
+  background:  #086bc1 ;
+}
+
+.footer-container{
+  padding: 20px 0;
+}
+
+.flex-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-list{
+  width: 25%;
+  padding: 0 20px;
+}
+
+.link-title{
+  font-size: 21px;
+  color: var(--bg-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.link-title::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  left: 0;
+  bottom: -10px;
+  background: var(--bg-color);
+}
+
+.link-items li:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.link-items li a{
+  color: #fffffb;
+  font-size: 12px;
+  padding: 10px;
+  display: block;
+  transition: .3s;
+}
+
+.link-items li a:hover{
+  color: var(--bg-color);
+  transform: translateX(14px);
+}
+
+.social-links a{
+  height: 40px;
+  width: 40px;
+  background: var(--bg-color);
+  color: var(--main-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.footer-text{
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.footer-text p{
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1400px){
+  header{
+      padding: 17px 3%;
+      transition: .2s;
+  }
+
+  header.sticky{
+      padding: 10px 3%;
+      transition: .2s;
+  }
+
+  section{
+      padding: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+      padding: 15px 5%;
+  }
+
+  .navbar {
+      display: none;
+  }
+
+  #menu-icon {
+      display: block;
+  }
+
+  .home-text h1 {
+      font-size: 2rem;
+  }
+
+  .home-text p {
+      font-size: 1rem;
+  }
+
+  .register-btn {
+      margin-right: 0;
+  }
+
+  section {
+      padding: 50px 5%;
+  }
+
+  .footer-container .link-list {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-text h1 {
+      font-size: 1.8rem;
+  }
+
+  .home-text p {
+      font-size: 0.9rem;
+  }
+
+  .home-btn {
+      padding: 10px 20px;
+  }
+
+  .text h2 {
+      font-size: 1.8rem;
+  }
+}
+
 
