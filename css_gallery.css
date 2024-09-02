@@ -201,13 +201,13 @@ header.sticky {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color:  #086bc1;
     color: #fff;
     cursor: pointer;
 }
 
 .upload-form input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color:  #086bc1ce;
 }
 
 .picbox{
