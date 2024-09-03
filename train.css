@@ -740,3 +740,219 @@ footer */
 }
 
 
+
+
+nav {
+  /* margin-top: 80px; */
+  padding-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 6.3rem;
+  width: 100vw;
+  background-color: #ededed;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  color: black;
+}
+/*Styling logo*/
+.logo11 {
+  padding: 1vh 1vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+.logo11 i {
+  color: #0898e6; /* Green color for the logo icon */
+  margin-right: 0.5rem;
+}
+.logo11 span {
+  color: #0898e6; /* Green color for the logo text */
+}
+/*Styling Links*/
+.nav-links {
+  display: flex;
+  list-style: none; 
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  
+}
+.nav-links li a {
+  text-decoration: none;
+  margin: 0 0.7vw;
+  color: inherit;
+}
+.nav-links li a:hover {
+  color: black;
+  /* background-color: #0898e6; */
+  
+  height: 10vh;/* Green color on hover */
+  
+}
+.nav-links li {
+  position: relative;
+}
+
+/*Styling Buttons*/
+.hire-button {
+  background-color: transparent;
+  border: 1.5px solid #000000; /* Green border for button */
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000000;
+}
+.hire-button:hover {
+  color: #131418;
+  background-color: #0898e6; /* Green background on hover */
+  border: 1.5px solid #0898e6;
+  transition: all ease-in-out 350ms;
+}
+.resume-button {
+  color: #fff;
+  background-color: #0898e6; /* Green background for button */
+  border: 1.5px solid #0898e6; /* Green border for button */
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.resume-button:hover {
+  color: #000000;
+  background-color: transparent;
+  border: 1.5px solid #000000; /* Green border on hover */
+  transition: all ease-in-out 350ms;
+}
+
+
+
+.searchTerm {
+  /* width: 150px; */
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #0898e6;
+
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  margin-left: -52px;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+
+/* Make the navigation bar sticky */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .logo11 {
+    display: block;
+    text-align: center;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  nav .searchTerm {
+    display: none;
+  }
+  nav .searchButton {
+    display: none;
+  }
+  nav .hire-button {
+    display: none;
+  }
+  nav .resume-button {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 5px;
+  }
+  nav .logo11 img {
+    height: 50px;
+    width: 100px;
+  }
+}
+
+/* Add a toggle button for mobile devices */
+.toggle-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/* Add JavaScript to toggle the navigation menu on mobile devices */

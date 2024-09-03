@@ -6,21 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="train.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Browser</title>
 </head>
 
 <body>
-  <nav style="background-color:  #086bc1;color:white;">
-    <div class="nav__logo"style="color:white;">Easy Trip</div>
-    <ul class="nav__links">
-      <li class="link"><a href="index.html"style="color:white;">Home</a></li>
-      <li class="link"><a href="holiday package.html"style="color:white;">Package</a></li>
-      <li class="link"><a href="GALLERY.HTML"style="color:white;">Picture Gallery</a></li>
-      <li class="link"><a href="contactus.html"style="color:white;">Contact Us</a></li>
- 
+  <nav>
+    <div class="logo11">
+        <i class="fa-brands fa-nfc-directional fa-2xl"></i>
+        <span style="font-weight: bolder;"><img src="finallogo.png" height="200px" width="250px" style="margin-top: 18px;"> </span>
+    </div>
+   
+    <ul class="nav-links" style="font-weight: bolder;" >
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="#skills">Skills</a></li> -->
+        <li><a href="holiday package.html">Package</a></li>
+        <li><a href="GALLERY.HTML">Picture  Gallery</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <input type="text" class="searchTerm" placeholder="Search here " size="15">
+  <button type="submit" class="searchButton">
+    <i class="fa fa-search" aria-setsize="2px"></i>
+ </button>
+        <!-- <li><a href="#education">Education</a></li> -->
+        <!-- <li><a href="#contact">Contact</a></li> -->
+        <li><button class="hire-button"><select><option value="">Sort By </option>
+            <option value="0-500" data-parent="budget">Prices</option>
+            <option value="500-1000" data-parent="budget">Veg/Non-Veg</option>
+            <option value="1000-2000" data-parent="budget">location</option>
+            <option value="2000+" data-parent="budget">Ratings</option></select></button></li>
+        <li><button class="resume-button" style="overflow: hidden;"> <a href="register.html" >Register</a></button></li>
     </ul>
-    <a href="register.html"><button class="btn">Register Now</button></a>
-  </nav>
+</nav>
 
   <header class="section__container header__container">
     <h1 class="section__header">Find And Book<br />A Great Experience</h1>
